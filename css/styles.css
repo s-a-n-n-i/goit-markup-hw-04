@@ -31,8 +31,6 @@ body {
 
 
 ul {
-    display: flex;
-    /* gap: 50px; */
     list-style: none;
 }
 
@@ -43,6 +41,12 @@ a {
 img {
     display: block;
     max-width: 100%;
+}
+
+/* buttons*/
+.solution-button,
+.filter-button {
+    cursor: pointer;
 }
 
 /* header */
@@ -66,8 +70,11 @@ img {
     align-items: center;
 }
 
+.team-list,
+.services-list,
 .nav-list,
 .contact-list {
+    display: flex;
     gap: 50px;
 }
 
@@ -99,8 +106,9 @@ img {
 
 .nav-link {
     font-weight: 500;
-    color: var(--primary-title-color);
     letter-spacing: 0.02em;
+
+    color: var(--primary-title-color);
 }
 
 .nav-link:hover {
@@ -117,10 +125,11 @@ img {
 }
 
 .contact-link {
-    color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;   
+
+    color: var(--primary-text-color);
 }
 
 .contact-link:hover {
@@ -135,7 +144,11 @@ img {
     justify-content: center;
     align-items: center;
     height: 600px;
-    background-color: var(--background-dark-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/solutions.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
 }
 
 .solution-title {
@@ -153,8 +166,7 @@ img {
     width: 216px;
     height: 50px;
     margin-top: 30px;
-    color: var(--primary-white-color);
-    background-color: var(--active-color);  
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -163,7 +175,12 @@ img {
     letter-spacing: 0.06em;
     border: 1px solid transparent;
     border-radius: 4px;
+
+    color: var(--primary-white-color);
+    background-color: var(--active-color);  
 }
+
+
 
 /* benefits */
 .benefits {
@@ -175,14 +192,32 @@ img {
     display: flex;
 }
 
+.benefits-list-item {
+    margin-right: 30px;
+}
+
+.benefits-icon {
+    display: block;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    width: 270px;
+    height: 120px;
+
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    
+}
+
 .benefits-list-title {
     margin-bottom: 10px;
-    color: var(--primary-title-color);
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    color: var(--primary-title-color);
 }
 
 .benefits-list-text {
@@ -208,12 +243,12 @@ img {
 }
 
 .title {
-    color: var(--primary-title-color);
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align:  center;
 
+    color: var(--primary-title-color);
 }
 
 .team {
@@ -226,19 +261,21 @@ img {
 }
 
 .team-list-item {
-    background-color: var(--primary-white-color);
     padding-bottom: 30px;
+    background-color: var(--primary-white-color);
 }
 
 .team-list-title {
     margin-top: 30px;
     margin-bottom: 10px;
-    color: var(--primary-title-color);
+
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
     line-height: 1.19;
     text-align: center;
+
+    color: var(--primary-title-color);
 }
 
 .team-list-text {
@@ -252,8 +289,8 @@ img {
 /* footer */
 
 .footer {
-    background-color: var(--background-dark-color);
     padding: 60px 0;
+    background-color: var(--background-dark-color);
 }
 
 .footer-contact,
@@ -281,8 +318,7 @@ img {
 
 .filter-button {
     padding: 4px 25px;
-    color: var(--portfolio-filter-button-text-color);
-    background-color: var(--portfolio-filter-button-color);
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -290,6 +326,9 @@ img {
     letter-spacing: 0.03em;
     border: 1px solid transparent;
     border-radius: 4px;
+
+    color: var(--portfolio-filter-button-text-color);
+    background-color: var(--portfolio-filter-button-color);
 }
 
 .filter-button:hover {
@@ -299,6 +338,7 @@ img {
 
 .filter-list {
     margin-bottom: 50px;
+
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -318,11 +358,12 @@ img {
 }
 
 .project-title {
-    color: var(--primary-title-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    color: var(--primary-title-color);
 }
 
 .project-text {
