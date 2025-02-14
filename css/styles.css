@@ -4,11 +4,13 @@
     --primary-text-color: #757575;
     --primary-title-color: #212121;
     --primary-white-color: #FFFFFF;
+    --primary-link-color: #AFB1B8;
     --active-color: #2196F3;
     --header-logo-color: #000000;
     --background-dark-color: #2F303A;
     --header-border-color: #ECECEC;
     --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --footer-item-link: rgba(255, 255, 255, 0.1);
     --portfolio-filter-button-color: #F5F4FA;
     --portfolio-filter-button-text-color: rgba(33, 33, 33, 1);
     --background-section-team: #F5F4FA;
@@ -113,10 +115,15 @@ img {
 
 .nav-link:hover {
     color: var(--active-color);
-} 
+}
 
 .active {
     color: var(--active-color);
+}
+
+.contact-icon {
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 .contact-list {
@@ -124,10 +131,15 @@ img {
     align-items: center;
 }
 
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
 .contact-link {
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.02em;   
+    letter-spacing: 0.02em;
 
     color: var(--primary-text-color);
 }
@@ -148,7 +160,7 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-     
+
 }
 
 .solution-title {
@@ -159,7 +171,7 @@ img {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
+
 }
 
 .solution-button {
@@ -177,7 +189,7 @@ img {
     border-radius: 4px;
 
     color: var(--primary-white-color);
-    background-color: var(--active-color);  
+    background-color: var(--active-color);
 }
 
 
@@ -205,7 +217,7 @@ img {
 
     background-color: #F5F4FA;
     border-radius: 4px;
-    
+
 }
 
 .benefits-list-title {
@@ -246,7 +258,7 @@ img {
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
-    text-align:  center;
+    text-align: center;
 
     color: var(--primary-title-color);
 }
@@ -286,11 +298,140 @@ img {
     text-align: center;
 }
 
+.team-list-icon {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.team-item-icon {
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-network-link {
+    width: 20px;
+    height: 16.25px;
+
+    fill: var(--primary-link-color);
+}
+
+.team-item-icon:hover {
+    background-color: var(--active-color);
+    cursor: pointer;
+}
+
+.social-network-link:hover {
+    fill: var(--primary-white-color);
+}
+
+.team-item-icon:hover .social-network-link {
+    fill: var(--primary-white-color);
+}
+
+.clients {
+    padding: 94px 0;
+}
+
+.clients-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42.19px;
+    letter-spacing: 3%;
+    text-align: center;
+
+    color: var(--primary-title-color);
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--primary-link-color);
+}
+
+.clients-link {
+    fill: var(--primary-link-color);
+}
+
+.clients-link:hover {
+    fill: var(--active-color);
+}
+
+.clients-item:hover {
+    border: 1px solid var(--active-color);
+    cursor: pointer;
+}
+
+.clients-item:hover .clients-link,
+.clients-link:focus {
+    fill: var(--active-color);
+}
+
 /* footer */
 
 .footer {
     padding: 60px 0;
     background-color: var(--background-dark-color);
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-item {
+    margin-right: 70px;
+}
+
+.footer-list-icon {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    
+}
+
+.footer-item-icon {
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--footer-item-link);
+}
+
+.footer-item-link {
+    fill: var(--primary-white-color);
+}
+
+.footer-item-icon:hover {
+    background-color: var(--active-color);
+    cursor: pointer;
+}
+
+.footer-item-icon:focus {
+    background-color: var(--active-color);
+}
+
+
+.footer-text {
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 3%;
+
+    text-transform: uppercase;
+    color: var(--primary-white-color);
 }
 
 .footer-contact,
@@ -353,7 +494,7 @@ img {
     flex-wrap: wrap;
 }
 
-.projects-list-item > img { 
+.projects-list-item>img {
     margin-bottom: 20px;
 }
 
